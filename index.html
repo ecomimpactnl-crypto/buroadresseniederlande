@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="./base.css">
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body id="top">
 
   <!-- ─── Navigation ─── -->
   <nav id="nav" class="nav" aria-label="Hauptnavigation">
     <div class="nav__inner">
       <a href="#hero" class="nav__logo" aria-label="BeCenter Startseite">
-        <img src="./logo.png" alt="BeCenter" class="nav__logo-img">
+        <img src="./Becenter.png" alt="BeCenter" class="nav__logo-img">
       </a>
       <button id="hamburger" class="nav__hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
@@ -114,7 +114,7 @@
       <div class="section__header reveal">
         <p class="section__label">Unsere Leistungen</p>
         <h2 class="section__title">Vier flexible Lösungen für jeden Unternehmertyp</h2>
-        <p class="section__sub">Von einer Geschäftsadresse für Ihre niederländische BV bis zum Besprechungsraum pro Stunde, wählen Sie die Lösung, die zu Ihrem Unternehmen passt.</p>
+        <p class="section__sub">Von einer Geschäftsadresse für Ihre niederländische BV bis zum eigenen Büro, wählen Sie die Lösung, die zu Ihrem Unternehmen passt.</p>
       </div>
       <div class="services__grid services__grid--four">
 
@@ -147,43 +147,14 @@
           </ul>
           <div class="service-card__price">
             <p class="service-card__price-label">Ab</p>
-            <p class="service-card__price-value">€199 <span class="service-card__price-period">/ Monat</span></p>
+            <p class="service-card__price-value">€399 <span class="service-card__price-period">/ Monat</span></p>
           </div>
           <a href="#contact" class="service-card__cta">Anfrage stellen</a>
         </article>
 
-        <article class="service-card reveal">
-          <h3 class="service-card__title">Flex-Arbeitsplatz mieten</h3>
-          <p class="service-card__desc">Arbeiten Sie in Ihrem eigenen Tempo. Buchen Sie einen Arbeitsplatz pro Stunde in unserem gemeinsamen oder privaten Arbeitsbereich.</p>
-          <ul class="service-card__features" role="list">
-            <li class="service-card__feature">Arbeitsplatz pro Stunde, kein Abonnement</li>
-            <li class="service-card__feature">Ruhige professionelle Umgebung</li>
-            <li class="service-card__feature">Direkt buchbar, kurzfristig nutzbar</li>
-            <li class="service-card__feature">Parken, WLAN, Kaffee &amp; Tee inklusive</li>
-          </ul>
-          <div class="service-card__price">
-            <p class="service-card__price-label">Ab</p>
-            <p class="service-card__price-value">€9 <span class="service-card__price-period">/ Stunde</span></p>
-          </div>
-          <a href="#contact" class="service-card__cta">Anfrage stellen</a>
-        </article>
+        
 
-        <article class="service-card reveal">
-          <h3 class="service-card__title">Besprechungsraum mieten</h3>
-          <p class="service-card__desc">Zwei Besprechungsräume, von einem intimen Beratungsraum bis zu einem geräumigen Boardroom für Ihr Team.</p>
-          <ul class="service-card__features" role="list">
-            <li class="service-card__feature">Kleiner oder großer Besprechungsraum</li>
-            <li class="service-card__feature">Inklusive Präsentationsmittel</li>
-            <li class="service-card__feature">Unbegrenzt Kaffee &amp; Tee</li>
-            <li class="service-card__feature">Kostenloses Parken für Ihre Gäste</li>
-            <li class="service-card__feature">Professioneller Empfang an der Rezeption</li>
-          </ul>
-          <div class="service-card__price">
-            <p class="service-card__price-label">Ab</p>
-            <p class="service-card__price-value">€19 <span class="service-card__price-period">/ Stunde</span></p>
-          </div>
-          <a href="#contact" class="service-card__cta">Anfrage stellen</a>
-        </article>
+        
 
       </div>
     </div>
@@ -237,7 +208,7 @@
         </div>
         <div class="location__map-wrapper">
           <iframe
-            src="https://www.google.com/maps?q=Markt+19,+6071+JD+Swalmen&output=embed&z=8"
+            data-cookiesrc="https://www.google.com/maps?q=Markt+19,+6071+JD+Swalmen&output=embed&z=8"
             width="600" height="420" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             title="BeCenter Lage, Markt 19 Swalmen">
@@ -276,10 +247,7 @@
           <dd class="faq__answer"><p>Nach Eingang Ihrer Anfrage und Zahlung senden wir Ihnen innerhalb eines Werktages den Mietvertrag zu. Damit können Sie direkt Ihre KVK-Eintragung vornehmen oder eine Adressänderung durchführen.</p></dd>
         </div>
 
-        <div class="faq__item">
-          <dt><button class="faq__question" aria-expanded="false">Kann ich den Besprechungsraum auch separat mieten?</button></dt>
-          <dd class="faq__answer"><p>Ja, unsere Besprechungsräume sind einzeln buchbar. Sowohl der kleine als auch der große Raum sind ab €19 pro Stunde verfügbar. Inklusive WLAN, Präsentationsmittel und Kaffee/Tee.</p></dd>
-        </div>
+        
 
         <div class="faq__item">
           <dt><button class="faq__question" aria-expanded="false">Ist der Vertrag monatlich kündbar?</button></dt>
@@ -289,6 +257,21 @@
         <div class="faq__item">
           <dt><button class="faq__question" aria-expanded="false">Wird meine Post weitergeleitet oder gescannt?</button></dt>
           <dd class="faq__answer"><p>Wir empfangen, sortieren und bearbeiten Ihre gesamte Geschäftspost an der Adresse. Nach Absprache leiten wir Ihre Post physisch weiter oder digital per E-Mail.</p></dd>
+        </div>
+
+        <div class="faq__item">
+          <dt><button class="faq__question" aria-expanded="false">Bekomme ich durch die Adresse eine steuerliche Betriebsstätte in den Niederlanden?</button></dt>
+          <dd class="faq__answer"><p>Eine Registrierungsadresse dient Ihrer KVK-Eintragung und Korrespondenz. Sie begründet für sich genommen keine steuerliche Betriebsstätte (vaste inrichting) in den Niederlanden — Ihre steuerliche Ansässigkeit hängt davon ab, wo Ihr Unternehmen tatsächlich geführt wird. Für Ihre Steuerlage empfehlen wir eine steuerliche Beratung.</p></dd>
+        </div>
+
+        <div class="faq__item">
+          <dt><button class="faq__question" aria-expanded="false">Welche Angaben benötigen Sie von mir?</button></dt>
+          <dd class="faq__answer"><p>Für die KVK-Eintragung und unsere gesetzliche Prüfung (Wwft) benötigen wir: einen gültigen Ausweis (Reisepass oder Personalausweis) der Geschäftsführer und der wirtschaftlich Berechtigten, Ihre Unternehmensdaten (u.&nbsp;a. Handelsregisternummer) und eine kurze Beschreibung Ihrer Tätigkeit. Zusätzlich führen wir einen Sanktions- und PEP-Abgleich durch. So erfüllen wir die gesetzlichen Vorgaben und schützen Sie und uns vor Missbrauch.</p></dd>
+        </div>
+
+        <div class="faq__item">
+          <dt><button class="faq__question" aria-expanded="false">Wie gehen Sie mit meinen personenbezogenen Daten um?</button></dt>
+          <dd class="faq__answer"><p>Wir verarbeiten nur die Daten, die für die Dienstleistung und unsere gesetzlichen Pflichten erforderlich sind &ndash; sicher und nicht l&auml;nger als zul&auml;ssig. Mehr dazu in unserer <a href="./datenschutz.html">Datenschutzerkl&auml;rung</a>.</p></dd>
         </div>
 
       </dl>
@@ -358,9 +341,9 @@
             <select id="interesse" name="interesse" required>
               <option value="" disabled selected>Option wählen</option>
               <option>Geschäftsadresse &amp; KVK-Eintragung (€99 p/M)</option>
-              <option>Büro mieten (€199 p/M)</option>
-              <option>Flex-Arbeitsplatz (€9 p/Std)</option>
-              <option>Besprechungsraum (€19 p/Std)</option>
+              <option>Büro mieten (€399 p/M)</option>
+              
+              
               <option>Sonstiges / Mehrere Optionen</option>
             </select>
           </div>
@@ -380,9 +363,7 @@
     <div class="footer__inner">
       <div class="footer__top">
         <div class="footer__brand">
-          <div class="footer__brand-logo">
-            <img src="./logo.png" alt="BeCenter" class="footer__logo-img">
-          </div>
+          <div class="footer__brand-logo"><a href="#top" aria-label="Terug naar boven"><img src="./logo.png" alt="BeCenter" class="footer__logo-img"></a></div>
           <p class="footer__brand-desc">Geschäftsadresse für die Handelsregistereintragung und flexible Büroräume in einem charakteristischen Gebäude am Marktplatz von Swalmen, Limburg.</p>
         </div>
         <div>
@@ -390,14 +371,16 @@
           <ul class="footer__links" role="list">
             <li><a href="#diensten">Geschäftsadresse &amp; KVK</a></li>
             <li><a href="#diensten">Büro mieten</a></li>
-            <li><a href="#diensten">Flex-Arbeitsplatz</a></li>
-            <li><a href="#diensten">Besprechungsraum</a></li>
+            
+            
           </ul>
         </div>
         <div>
           <h3 class="footer__col-title">Kontakt</h3>
           <ul class="footer__links" role="list">
             <li><a href="./impressum.html">Impressum</a></li>
+            <li><a href="./datenschutz.html">Datenschutzerklärung</a></li>
+            <li><a href="./cookie-richtlinie.html">Cookie-Richtlinie</a></li>
             <li>Markt 19</li>
             <li>6071 JD Swalmen</li>
             <li>Niederlande</li>
@@ -412,6 +395,7 @@
     </div>
   </footer>
 
+  <script src="./cookie.js"></script>
   <script src="./app.js"></script>
   <script>
     document.querySelectorAll('.faq__question').forEach(function(btn) {
