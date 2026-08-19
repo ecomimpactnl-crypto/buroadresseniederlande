@@ -113,7 +113,7 @@
     <div class="container">
       <div class="section__header reveal">
         <p class="section__label">Unsere Leistungen</p>
-        <h2 class="section__title">Vier flexible Lösungen für jeden Unternehmertyp</h2>
+        <h2 class="section__title">Drei flexible Lösungen für jeden Unternehmertyp</h2>
         <p class="section__sub">Von einer Geschäftsadresse für Ihre niederländische BV bis zum eigenen Büro, wählen Sie die Lösung, die zu Ihrem Unternehmen passt.</p>
       </div>
       <div class="services__grid services__grid--four">
@@ -147,7 +147,24 @@
           </ul>
           <div class="service-card__price">
             <p class="service-card__price-label">Ab</p>
-            <p class="service-card__price-value">€399 <span class="service-card__price-period">/ Monat</span></p>
+            <p class="service-card__price-value">€299 <span class="service-card__price-period">/ Monat</span></p>
+          </div>
+          <a href="#contact" class="service-card__cta">Anfrage stellen</a>
+        </article>
+
+        <article class="service-card reveal">
+          <h3 class="service-card__title">Besprechungsraum mieten</h3>
+          <p class="service-card__desc">Zwei Besprechungsräume, von einem intimen Beratungsraum bis zu einem geräumigen Boardroom für Ihr Team.</p>
+          <ul class="service-card__features" role="list">
+            <li class="service-card__feature">Kleiner oder großer Besprechungsraum</li>
+            <li class="service-card__feature">Inklusive Präsentationsmittel</li>
+            <li class="service-card__feature">Unbegrenzt Kaffee &amp; Tee</li>
+            <li class="service-card__feature">Kostenloses Parken für Ihre Gäste</li>
+            <li class="service-card__feature">Professioneller Empfang an der Rezeption</li>
+          </ul>
+          <div class="service-card__price">
+            <p class="service-card__price-label">Ab</p>
+            <p class="service-card__price-value">€19 <span class="service-card__price-period">/ Stunde</span></p>
           </div>
           <a href="#contact" class="service-card__cta">Anfrage stellen</a>
         </article>
@@ -341,7 +358,8 @@
             <select id="interesse" name="interesse" required>
               <option value="" disabled selected>Option wählen</option>
               <option>Geschäftsadresse &amp; KVK-Eintragung (€99 p/M)</option>
-              <option>Büro mieten (€399 p/M)</option>
+              <option>Büro mieten (€299 p/M)</option>
+               <option>Besprechungsraum (€19 p/Std)</option>
               
               
               <option>Sonstiges / Mehrere Optionen</option>
@@ -371,6 +389,7 @@
           <ul class="footer__links" role="list">
             <li><a href="#diensten">Geschäftsadresse &amp; KVK</a></li>
             <li><a href="#diensten">Büro mieten</a></li>
+             <li><a href="#diensten">Besprechungsraum</a></li>
             
             
           </ul>
@@ -396,6 +415,12 @@
   </footer>
 
   <script src="./cookie.js"></script>
+  <!-- Google Ads (gtag.js) — laadt ná cookie.js, dus met Consent Mode v2 (standaard: geweigerd) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18359968202"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'AW-18359968202');
+  </script>
   <script src="./app.js"></script>
   <script>
     document.querySelectorAll('.faq__question').forEach(function(btn) {
